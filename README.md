@@ -8,7 +8,7 @@ Plugin boilderplate made with [This](https://www.spigotmc.org/wiki/creating-a-bl
 
 You will need:
 
-- Jave
+- Java
 - JDK
 - Maven
 - VSCode ( recomended )
