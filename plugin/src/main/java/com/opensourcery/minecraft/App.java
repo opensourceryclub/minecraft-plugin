@@ -4,6 +4,7 @@ public class App extends JavaPlugin {
     @Override
     public void onEnable() {
         getLogger().info("Hello, SpigotMC!");
+        getLogger().info("Hello, World!");
     }
     @Override
     public void onDisable() {
