@@ -1,1 +1,1 @@
-mvn install -f "pom.xml" & move /y "target\opensourcery-beta.jar" "..\server\plugins"
+mvn install -f "pom.xml" & robocopy "target" "..\server\plugins" "opensourcery-beta.jar" /is

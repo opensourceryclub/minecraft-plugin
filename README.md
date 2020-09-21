@@ -8,7 +8,7 @@ Plugin boilderplate made with [This](https://www.spigotmc.org/wiki/creating-a-bl
 
 You will need:
 
-- Jave
+- Java
 - JDK
 - Maven
 - VSCode ( recomended )
@@ -29,7 +29,3 @@ To connect to server
 ```
 Open Minecraft and connect to IP: `localhost`
 ```
-
-## How to edit
-
-Look [here](https://www.spigotmc.org/wiki/create-a-simple-command/) for adding commands to the project 
