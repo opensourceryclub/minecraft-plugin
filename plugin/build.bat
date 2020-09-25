@@ -1,1 +1,0 @@
-mvn install -f "pom.xml" & robocopy "target" "..\server\plugins" "opensourcery-beta.jar" /is

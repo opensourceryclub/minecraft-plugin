@@ -15,17 +15,31 @@ You will need:
 - Minecraft 
 - Java extentions for vs code ( recomended )
 
-To build plugin 
-```
-plugin/build.bat
-```
+To make sure you have the above installed, make sure you can type `java` and `mvn` into your terminal and see valid outputs. If either is not a registered command then it is not installed
 
-To run server
+To initialize the server:
 ```
-server/start.bat
+> start.bat
 ```
+You will have to accept the eula and then start it again
 
-To connect to server
-```
-Open Minecraft and connect to IP: `localhost`
-```
+After that you are fully set up!
+
+## Development
+
+The script `build.bat` will:
+
+- Build the plugin into a .jar file
+- Move it to the server/plugins folder
+- Turn off the old version on the server
+- Load in the newly build plugin
+
+The server will `NOT` need to be restarted after every build. Turn it on once at the start, then you are fine.
+
+The script `start.bat` will:
+
+- Turn on the server locally
+
+Make sure the server is `ONLINE` before you run `build.bat`
+
+To connect to the server type in `localhost` into the ip slot on minecraft

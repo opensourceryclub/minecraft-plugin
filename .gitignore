@@ -2,6 +2,7 @@ server/*
 
 !server/start.bat
 !server/spigot-1.16.2.jar
+!server/plugins
 plugin/target
 *.pem
 
