@@ -15,7 +15,7 @@ public class SyncListener  extends BukkitRunnable {
 	String pluginName;
 	Server server;
 
-    public SyncListener( Server _server ) {
+	public SyncListener( Server _server ) {
 		server = _server;
 	}
 
@@ -23,7 +23,7 @@ public class SyncListener  extends BukkitRunnable {
 		System.out.println("[SyncListener] " + output);
 	}
 
-    public void run() {
+	public void run() {
 		
 		try {
 
@@ -31,7 +31,7 @@ public class SyncListener  extends BukkitRunnable {
 			log("SyncListener open for requests");
 
 			while ( true ) {
-        
+		
 				Socket sock = serverSock.accept();
 
 				InputStream sis = sock.getInputStream();

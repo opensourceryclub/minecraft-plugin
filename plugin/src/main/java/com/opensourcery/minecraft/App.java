@@ -1,36 +1,28 @@
 package com.opensourcery.minecraft;
 
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.Server;
+import java.util.logging.Logger;
 import java.io.*;
 
 public class App extends JavaPlugin {
 
-	SyncListener syncListener;
-	Thread syncThread;
-	Server server;
+	static JavaPlugin plugin;
+	Logger logger;
 
 	@Override
-    public void onEnable() {
+	public void onEnable() {
+		plugin = this;
+		logger = Bukkit.getLogger();
 
-		server = getServer();
-
-        getLogger().info("Update Without Restart! Yay!");
-
-		/* Checkin with api request */
-		syncListener = new SyncListener( server );
-        syncThread = new Thread(syncListener);
-		syncThread.start();
+		RemoteReload.initialize();
 		
-		server.getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
-			public void run() {
-				syncListener.syncProcess();
-			}}, 0, 10);
-		
-    }
-    @Override
-    public void onDisable() {
-        getLogger().info("See you again, SpigotMC!");
-        syncThread.stop();
-    }
+		logger.info("Plugin Enabled");
+	}
+	@Override
+	public void onDisable() {
+		RemoteReload.disable();
+		logger.info("Plugin Disabled");
+	}
 }
