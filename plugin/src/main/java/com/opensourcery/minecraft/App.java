@@ -8,7 +8,7 @@ import java.io.*;
 
 public class App extends JavaPlugin {
 
-	static JavaPlugin plugin;
+	public static JavaPlugin plugin;
 	Logger logger;
 
 	@Override
@@ -17,12 +17,14 @@ public class App extends JavaPlugin {
 		logger = Bukkit.getLogger();
 
 		RemoteReload.initialize();
+		MobManager.initialize ( plugin );
 		
 		logger.info("Plugin Enabled");
 	}
 	@Override
 	public void onDisable() {
 		RemoteReload.disable();
+		MobManager.disable();
 		logger.info("Plugin Disabled");
 	}
 }
