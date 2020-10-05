@@ -1,3 +1,7 @@
 main: com.opensourcery.minecraft.App
 name: OpenSourcery
 version: 0.1
+commands:
+  module:
+    usage: /<command>
+    description: Manage modules

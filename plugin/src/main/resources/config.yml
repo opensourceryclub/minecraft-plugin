@@ -1,0 +1,8 @@
+modules:
+  JoinLeaveMessages:
+    enabled: true
+    config:
+      join: "&a&l+ &a%player%"
+      quit: "&c&l- &c%player%"
+  Mobs:
+    enabled: true

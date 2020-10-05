@@ -9,3 +9,6 @@ plugin/target
 *.pem
 
 node_modules
+.idea
+*.iml
+dependency-reduced-pom.xml

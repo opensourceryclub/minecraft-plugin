@@ -1,9 +1,6 @@
-package com.opensourcery.minecraft;
-import org.bukkit.plugin.java.JavaPlugin;
+package com.opensourcery.minecraft.reload;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.Server;
-import java.util.HashMap;
-import java.util.Scanner;
 
 import java.io.*;
 import java.net.*;
